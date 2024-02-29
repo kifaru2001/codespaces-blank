@@ -1,0 +1,67 @@
+.p{
+  color: rgb(234, 234, 234);
+  z-index: 100;
+}
+
+.box {
+  margin-top: 3%;
+  background: rgba(46, 46, 46, 0.478);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 18px;
+  width: auto;
+  font-family: consolas;
+  position: relative;
+  border-radius: 8px;
+  text-shadow: 2px 2px 2px black;
+  font-weight: bolder;
+  border: rgb(123, 123, 123) solid 2px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.01);
+ z-index: auto;
+ color: lightgray;
+ cursor: pointer;
+
+  &::after {
+    position: absolute;
+	border: saddlebrown 1px;
+    content: "";
+    top: 15px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.9) translateZ(0);
+    filter: blur(15px);
+    background: linear-gradient(
+      to left,
+	  #1b43c6c2,
+      #0122de93,
+      #1916c399,
+      #162ac394,
+      #3801de9b,
+      #1658c380,
+      #1619c39e,
+      #0110de73,
+      #1664c3ae,
+    );
+    background-size: 200% 200%;
+    animation: animateGlow 1.25s linear infinite;
+  }
+}
+.box:hover {
+  scale: 1.1;
+  background: gray;
+  border: white solid 2px;
+
+}
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}

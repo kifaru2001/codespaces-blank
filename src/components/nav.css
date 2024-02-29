@@ -1,0 +1,219 @@
+.nav-container {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 7%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background: transparent;
+}
+.nav-container1 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-link {
+  display: contents;
+}
+.nav-container2 {
+  flex: 0 0 auto;
+  width: 337px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+  justify-content: center;
+  text-decoration: none;
+}
+.nav-container3 {
+  flex: 0 0 auto;
+  width: 578px;
+  height: 100%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-self: flex-end;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav-container4 {
+  flex: 0 0 auto;
+  gap: 3%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ color: white;
+ margin: 3%;
+}
+.nav-container5 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: var(--dl-space-space-unit);
+  align-items: center;
+  margin-bottom: var(--dl-space-space-unit);
+  justify-content: center;
+}
+.nav-navlink {
+  display: contents;
+}
+.nav-container6 {
+  flex: 0 0 auto;
+  width: 337px;
+  height: auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-self: flex-end;
+  justify-content: center;
+  text-decoration: none;
+}
+@media(max-width: 991px) {
+  .nav-container3 {
+    width: 272px;
+  }
+}
+@media(max-width: 767px) {
+  .nav-container {
+    height: 489px;
+  }
+  .nav-container2 {
+    width: auto;
+    margin-left: var(--dl-space-space-sixunits);
+    margin-right: var(--dl-space-space-sixunits);
+  }
+  .nav-container3 {
+    width: 280px;
+  }
+  .nav-container6 {
+    width: auto;
+    margin-left: var(--dl-space-space-sixunits);
+    margin-right: var(--dl-space-space-sixunits);
+    justify-content: center;
+  }
+}
+@media(max-width: 479px) {
+  .nav-container {
+    height: 300px;
+    margin-bottom: 10%;
+  }
+  .nav-container2 {
+    justify-content: flex-start;
+  }
+  .nav-container3 {
+    width: 150px;
+  }
+  .nav-container6 {
+    justify-content: flex-end;
+  }
+}
+.arrow {
+  transform: translate(-50%, -50%);
+  transform: rotate(90deg);
+  cursor: pointer;
+  margin-left: 2%;
+}
+.arrow2 {
+  transform: translate(50%, 50%);
+  transform: rotate(-90deg);
+  cursor: pointer;
+  margin-left: 2%;
+}
+.arrow2 span {
+  display: block;
+  width: 2vw;
+  height: 2vw;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  transform: rotate(45deg);
+  animation: animate 2s infinite;
+}
+
+.arrow2 span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrow2 span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+.arrow span {
+  display: block;
+  width: 2vw;
+  height: 2vw;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  transform: rotate(45deg);
+  animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .arrow {
+    transform: translate(-50%, -50%);
+    transform: rotate(90deg);
+    cursor: pointer;
+  }
+  .arrow2 {
+    transform: translate(50%, 50%);
+    transform: rotate(-90deg);
+    cursor: pointer;
+  }
+  .arrow2 span {
+    display: block;
+    width: 4vw;
+    height: 4vw;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+  }
+  
+  .arrow2 span:nth-child(2) {
+    animation-delay: -0.2s;
+  }
+  
+  .arrow2 span:nth-child(3) {
+    animation-delay: -0.4s;
+  }
+  .arrow span {
+    display: block;
+    width: 4vw;
+    height: 4vw;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+  }
+  
+  .arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+  }
+  
+  .arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+  }
+}
