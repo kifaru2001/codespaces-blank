@@ -40,8 +40,7 @@ export default function Roadmap() {
     <h3 className="vertical-timeline-element-title">Launch Phase</h3>
     <h4 className="vertical-timeline-element-subtitle">10K Collectibles</h4>
     <p>
-     Our launchpad of 10,000 Whales was deployed on YoungParrot NFT Marketplace. NFT owners of this collection have access to major utilities such as
-     WHLS staking, Discord Roles, Discord Chatroom and Airdrops eligibility. 
+    10K Whale NFTs were launched on YoungParrot with verying prices in a Public Mint. All 10k were uniqe and rare collectibles to act as PFPs for members. 
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
@@ -51,10 +50,10 @@ export default function Roadmap() {
     iconStyle={{ background: 'black', color: '#fff' }}
    
   >
-    <h3 className="vertical-timeline-element-title">Art Director</h3>
-    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+    <h3 className="vertical-timeline-element-title">Staking Pools</h3>
+    <h4 className="vertical-timeline-element-subtitle">NFT owners of this 10K collectibles can stake NFT and earn rewards inform of Whales Token, a bitcoin-like EVM token on CORE to act as ecosystem protocol and governance</h4>
     <p>
-      Creative Direction, User Experience, Visual Design, SEO, Online Marketing
+    Whales Token can be delegated in BWYCDAO to make proposals or vote for proposals. 
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
@@ -64,10 +63,10 @@ export default function Roadmap() {
     iconStyle={{ background: 'black', color: '#fff' }}
    
   >
-    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-    <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
+    <h3 className="vertical-timeline-element-title">Discord Roles</h3>
+    <h4 className="vertical-timeline-element-subtitle">We crafted a way for NFT owners of this 10k collectibles to gain acces to certain channels and roles by verifying their wallets.</h4>
     <p>
-      User Experience, Visual Design
+Utility mechanism
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
@@ -77,10 +76,10 @@ export default function Roadmap() {
     iconStyle={{ background: 'black', color: '#fff' }}
    
   >
-    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+    <h3 className="vertical-timeline-element-title">Whale Cards</h3>
+    <h4 className="vertical-timeline-element-subtitle">We launchd a unique colletibles of whaleverse location, this cards can be staked, traded or grant membership in BWYCDAO</h4>
     <p>
-      User Experience, Visual Design
+   Whalescards earns users more rewards than other NFT in the ecosystem, they unlock so many things, try to find one.
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
@@ -90,10 +89,10 @@ export default function Roadmap() {
     iconStyle={{ background: 'white', color: '#fff' }}
   
   >
-    <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-    <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
+    <h3 className="vertical-timeline-element-title">RareBay</h3>
+    <h4 className="vertical-timeline-element-subtitle">A Multipurpose DEX for Whales, to interact with all utility in one place seamlessly from anywhere anytime.</h4>
     <p>
-      Strategy, Social Media
+      RareBay is a Thirdparty WEB3 space Affilieted with with Whales, that plans to launch whales utility while in their Beta Version
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
@@ -104,10 +103,10 @@ export default function Roadmap() {
   
   
   >
-    <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-    <h4 className="vertical-timeline-element-subtitle">Certification</h4>
+    <h3 className="vertical-timeline-element-title">RareBay Testnet</h3>
+    <h4 className="vertical-timeline-element-subtitle">Whales team Launched a testnet version of NFT collection on RareBay Testenet for members to interact without having to use real world value</h4>
     <p>
-      Creative Direction, User Experience, Visual Design
+     Testnet version is useful for new users and developers.
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
@@ -118,18 +117,12 @@ export default function Roadmap() {
   
   
   >
-    <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-    <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
+    <h3 className="vertical-timeline-element-title">BoredWhales Season 2</h3>
+    <h4 className="vertical-timeline-element-subtitle">Whales launched a Season 2 of 10k Collectibes but with a slight upgrade to metadata and characters.</h4>
     <p>
-      Creative Direction, Visual Design
+      Staked rewards from Season 2 NFTs is locked until second halving
     </p>
   </VerticalTimelineElement>
-  <VerticalTimelineElement
-   contentStyle={{ background: 'rgb(0, 0, 0, 0.5)', color: '#fff', borderRadius: "16px", backdropFilter: "blur(10px)", border: "solid 1px gray" }}
-   iconStyle={{ background: 'white', color: '#fff' }}
-  
-    
-  />
 </VerticalTimeline>
 <Nav />
         </div>

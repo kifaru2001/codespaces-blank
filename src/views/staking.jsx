@@ -28,7 +28,7 @@ const Leaderboard = (props) => {
       </div>
       <p style={{fontSize: "16px", color: "white"}}>Stake NFT</p>
       <div className="leaderboard-container2"></div>
-      <div className="leaderboard-container3"></div>
+      <div className="leaderboard-container3">--------COMING🐳SOON---------</div>
       <Nav></Nav>
     </div>
     </>

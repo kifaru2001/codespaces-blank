@@ -9,6 +9,7 @@ import Slider from '../components/slider'
 import "../components/button.scss"
 import Chart from '../components/chart'
 import Mint from '../components/mint'
+import Grid from '../components/grid'
 
 
 const Leaderboard = (props) => {
@@ -34,15 +35,15 @@ const Leaderboard = (props) => {
       </div>
       <p style={{fontSize: "16px", color: "white"}}>Join the Club</p>
       
-      <div className="leaderboard-container2"></div>
-      
-      <div className="leaderboard-container3">
-    
-        <div style={{zIndex: "1"}}> </div>
-      
+      <div className="leaderboard-container2">
+  
       </div>
+      
+
+      
       <Nav></Nav>
     </div>
+    
     <div class="overlay"></div>
     </>
   )
