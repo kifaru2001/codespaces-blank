@@ -3,16 +3,19 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import './grid.css'
+import Slider from './slider'
 
 const Grid = (props) => {
   return (
     <div className={`grid-container ${props.rootClassName} `}>
       <div className="grid-container1">
         <div className="grid-container2">
-          <h1 className="">{props.heading}</h1>
+          <p className="">Launchpad</p>
+          <p style={{fontSize: "10px", fontStyle: "italic", fontWeight: "400"}}>Season 2 Price is not fixed in public launchpad</p>
+          <Slider />
         </div>
         <div className="grid-container3">
-          <h1 className="">{props.heading1}</h1>
+          <p className="">{props.heading1}</p>
         </div>
       </div>
     </div>
@@ -21,7 +24,7 @@ const Grid = (props) => {
 
 Grid.defaultProps = {
   rootClassName: '',
-  heading: 'Heading',
+  heading: 'Launchpad',
   heading1: 'Heading',
 }
 

@@ -4,9 +4,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  height: 100%;
+  height: auto;
   z-index: -10;
-  background-color: gray;
+  background-color: rgb(35, 35, 35);
 }
 
 body {

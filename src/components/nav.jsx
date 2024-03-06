@@ -28,10 +28,10 @@ const Nav = (props) => {
       </div>
       <div className="nav-container3">
       <div className="nav-container4">
-          <div className='box' style={{height: "80px", backdropFilter: "blur(50px)", background: "rgba(200, 200, 200, 0.2)", minWidth: "250px", border: "solid gray 0px", borderRadius: "10px", padding: "1%", display: "flex", flexDirection: "column"}}>
+          <div className='box' style={{height: "80px", backdropFilter: "blur(50px)", background: "rgba(200, 200, 200, 0.2)", minWidth: "250px", border: "solid gray 0px", borderRadius: "10px", padding: "2%", display: "flex", flexDirection: "column"}}>
 <p style={{fontSize: "10px", borderBottom: "solid 0px gray", width: "100%", margin: "1%", padding: "1%"}}>Your Balances</p>
-<p style={{fontSize: "14px", textAlign: "start", display: "flex"}}>WHLS: 0.0</p>
-<p style={{fontSize: "14px", textAlign: "start"}}>RARE: 0.0</p>
+<p style={{fontSize: "14px", textAlign: "start", display: "flex"}}>WHLS🐋: 0.0</p>
+<p style={{fontSize: "14px", textAlign: "start"}}>RARE⚡: 0.0</p>
           </div>
         </div>
       <div className="box">

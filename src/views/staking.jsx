@@ -5,6 +5,9 @@ import './leaderboard.css'
 import ShuffleText from "react-shuffle-text"
 
 import Menu from '../components/Trans/menu'
+import Mint from '../components/mint1'
+import Stake from '../components/stake'
+
 
 
 const Leaderboard = (props) => {
@@ -19,6 +22,7 @@ const Leaderboard = (props) => {
         <div class="shape-blob six"></div>
       </div>
     <div className="leaderboard-container">
+      <Mint />
       <div className="leaderboard-container1">
       <h1 style={{fontSize: "30px", color: "white", margin: "2%", fontWeight: "bolder", fontFamily: "monospace", textAlign: "center"}} >
   
@@ -27,8 +31,12 @@ const Leaderboard = (props) => {
   </h1>
       </div>
       <p style={{fontSize: "16px", color: "white"}}>Stake NFT</p>
-      <div className="leaderboard-container2"></div>
-      <div className="leaderboard-container3">--------COMING🐳SOON---------</div>
+      <div className="leaderboard-container2">
+     
+      </div>
+<div style={{height: "100%", width: "100%", position: "relative"}}>
+<Stake />
+</div>
       <Nav></Nav>
     </div>
     </>

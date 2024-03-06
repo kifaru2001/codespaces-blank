@@ -3,6 +3,7 @@ import './style.css';
 import { Blockie } from "web3uikit"
 import { useAddress } from '@thirdweb-dev/react';
 import {Whale, ChevronDown} from '@web3uikit/icons'
+import truncateEthAddress from 'truncate-eth-address';
 
 /**
    * @class Leaderboard
@@ -173,7 +174,7 @@ class Leaderboard extends Component {
   render() {
     
     return (
-      <div style={{border: "solid gray 1px", borderRadius: "16px", padding: "2.4%", background: "rgba(15, 15, 15, 0.2)", backdropFilter: "blur(5px)", margin: "1%"}}>
+      <div style={{border: "solid rgba(45, 45, 45, 0.7) 1px", borderRadius: "8px", padding: "2%", background: "rgba(45, 45, 45, 0.2)", backdropFilter: "blur(5px)", margin: "1%", width: "100%"}}>
         <table id="lBoard">
           <tbody className='ranking'>
             <tr>
@@ -187,9 +188,9 @@ class Leaderboard extends Component {
               </td>
             </tr>
             <tr style={{padding: "2%"}}>
-              <td className='rank-header sortScore' onClick={ this.sortUsersByScore }> Rank <ChevronDown fontSize="20px" /> </td>
-              <td className='rank-header sortAlpha' onClick={ this.sortUsersByName }> Address <ChevronDown fontSize="20px" /> </td>
-              <td className='rank-header' onClick={ this.sortUsersByScore }> Owned <ChevronDown fontSize="20px" /> </td>
+              <td className='rank-header sortScore' onClick={ this.sortUsersByScore }> Rank <ChevronDown fontSize="16px" /> </td>
+              <td className='rank-header sortAlpha' onClick={ this.sortUsersByName }> Address <ChevronDown fontSize="16px" /> </td>
+              <td className='rank-header' onClick={ this.sortUsersByScore }> Owned <ChevronDown fontSize="16px" /> </td>
        
             </tr>
            
@@ -198,7 +199,7 @@ class Leaderboard extends Component {
                <tr className='ranking' key={index}>
                 
                 { user.page == this.state.page ? <td className='data'>{ user.rank }</td> : null }
-                { user.page == this.state.page ? <td className='data' style={{justifyContent: "center"}}><Blockie scale={2} seed={user.name} />{ user.name }</td> : null }
+                { user.page == this.state.page ? <td className='data' style={{justifyContent: "center"}}><Blockie scale={2} seed={user.name} />{truncateEthAddress(user.name)}</td> : null }
                 { user.page == this.state.page ? <td className='data'>{ user.score }<Whale fontSize="20px" /></td> : null }
                </tr>
              )

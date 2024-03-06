@@ -5,16 +5,18 @@ import PropTypes from 'prop-types'
 import './mint.css'
 
 const Mint = (props) => {
+  
+
   return (
     <div className={`mint-container ${props.rootClassName} `}>
       <div className="mint-container01">
         <div className="mint-container02"></div>
-        <div className="mint-container03">Season II
-        <p style={{fontSize: "14px", justifyContent: "start", margin: "5px"}}>Season2 Intorduces NEW characters, Specs and Metadata Upgrades.</p>
+        <div className="mint-container03">Season II Staking
+        <p style={{fontSize: "14px", justifyContent: "start", margin: "5px"}}>Staking Season 2 earn you WHLS rewards</p>
         </div>
         <div className="mint-container04">
-          <div className="mint-container05"><h1 style={{textAlign: "start"}}>Season II</h1>
-          <p style={{fontSize: "19px", justifyContent: "start", position: "absolute", marginTop: "6%", textAlign: "start", width: "40%"}}>Season2 Intorduces NEW characters, Specs and Metadata Upgrades. Mint Whale to get started.</p>
+          <div className="mint-container05"><p style={{textAlign: "start", fontSize: "30px"}}>Whales Staking</p>
+          <p style={{fontSize: "19px", justifyContent: "start", position: "absolute", marginTop: "6%", textAlign: "start", width: "40%"}}>Staking Whales earn you WHLS rewards</p>
           </div>
           <div className="mint-container06">
             <div className="mint-container07">
@@ -27,7 +29,7 @@ const Mint = (props) => {
             </div>
             <div className="mint-container09">
               <span className="mint-text4">Owners</span>
-              <span className="mint-text5">150</span>
+              <span className="mint-text5">{}</span>
             </div>
           </div>
         </div>

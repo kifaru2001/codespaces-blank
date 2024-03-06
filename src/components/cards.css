@@ -58,7 +58,7 @@
     border-radius: 16px;
   }
   .gallery:hover{
-    box-shadow: 2px 2px 1200px rgba(0, 200, 100, 0.4);
+    box-shadow: 2px 2px 1200px rgba(241, 125, 0, 0.4);
     cursor: pointer;
   }
   .gallery > div:last-child {

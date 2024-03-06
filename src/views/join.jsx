@@ -39,12 +39,16 @@ const Leaderboard = (props) => {
   
       </div>
       
-
+<Grid />
       
       <Nav></Nav>
+     
     </div>
     
-    <div class="overlay"></div>
+    <div class="overlay">
+      
+    </div>
+
     </>
   )
 }

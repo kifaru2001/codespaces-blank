@@ -7,6 +7,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  overflow-x: hidden;
 }
 .mint-container01 {
   width: 100%;
@@ -60,7 +61,6 @@
   display: flex;
   margin-top: -2%;
   margin-bottom: 2%;
-  align-items: center;
   margin-left: var(--dl-space-space-sixunits);
   flex-direction: column;
   justify-content: center;
