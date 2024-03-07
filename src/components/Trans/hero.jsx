@@ -26,15 +26,15 @@ function Home() {
     <div class="shape-blob five"></div>
     <div class="shape-blob six"></div>
 	</div>
-  <div style={{width: "100%", display: "flex", padding: "5%", borderBottom: "rgba(50, 50, 50, 0.25) 1px solid"}}>
+  <div style={{width: "100%", display: "flex", padding: "8%", borderBottom: "rgba(50, 50, 50, 0.25) 1px solid"}}>
     <div style={{width: "80%", display: "flex", flexDirection: "column"}}>
       
-  <h1 style={{fontSize: "4em"}}>
+  <h1 style={{fontSize: "3em"}}>
    
    <ShuffleText charIncInterval="100" charFrameTime="70" charFrames="50"  content="BORED WHALES" styles={{color: "white"}} />
  
    </h1>
-   <h1 style={{fontSize: "4em", marginTop: "-2%", fontWeight: "100"}}>
+   <h1 style={{fontSize: "3em", marginTop: "-2%", fontWeight: "100"}}>
    
    <ShuffleText charIncInterval="100" charFrameTime="70" charFrames="50"  content="YACHT CLUB" styles={{color: "white"}} />
  

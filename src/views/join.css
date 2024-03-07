@@ -6,7 +6,7 @@
   bottom: 0;
   height: auto;
   z-index: -10;
-  background-color: rgb(35, 35, 35);
+  background-color: rgb(17, 17, 17);
 }
 
 body {
@@ -14,7 +14,7 @@ body {
   align-items: center;
   color: #fff;
   animation: expand .8s ease forwards;
-  background-color: black;
+  background-color: rgb(18, 18, 18);
   transition: all .8s ease;
 }
 .join-container {

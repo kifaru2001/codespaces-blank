@@ -22,7 +22,7 @@ import {
           <div style={{alignItems: "center", gap: "10px"}}>
             {nft.metadata && (
               <ThirdwebNftMedia
-                style={{ borderRadius: "8px", width: "auto", height: "200px", display: "flex", alignItems: "center" }}
+                style={{ borderRadius: "8px", width: "auto", height: "150px", display: "flex", alignItems: "center" }}
                 metadata={nft.metadata}
                 className="nftMedia"
               />
@@ -34,10 +34,10 @@ import {
             <Web3Button
               style={{
                 backgroundColor: "transparent",
-                width: "50px",
+                width: "auto",
                 display: "flex",
                 alignItems: "center",
-                height: "30px",
+                height: "auto",
                 fontSize: "14px",
                 color: "white"
               }}

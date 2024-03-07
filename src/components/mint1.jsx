@@ -11,12 +11,12 @@ const Mint = (props) => {
     <div className={`mint-container ${props.rootClassName} `}>
       <div className="mint-container01">
         <div className="mint-container02"></div>
-        <div className="mint-container03">Season II Staking
+        <div className="mint-container03"><p style={{textAlign: "start", fontSize: "40px"}}>Whales Staking</p>
         <p style={{fontSize: "14px", justifyContent: "start", margin: "5px"}}>Staking Season 2 earn you WHLS rewards</p>
         </div>
         <div className="mint-container04">
           <div className="mint-container05"><p style={{textAlign: "start", fontSize: "30px"}}>Whales Staking</p>
-          <p style={{fontSize: "19px", justifyContent: "start", position: "absolute", marginTop: "6%", textAlign: "start", width: "40%"}}>Staking Whales earn you WHLS rewards</p>
+          <p style={{fontSize: "14px", justifyContent: "start", position: "absolute", marginTop: "6%", textAlign: "start", width: "40%"}}>Staking Whales earn you WHLS rewards</p>
           </div>
           <div className="mint-container06">
             <div className="mint-container07">

@@ -78,12 +78,18 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
       );
     }
   
+    function _quantity(): any[] | undefined {
+      throw new Error("Function not implemented.");
+    }
+
     return (
       <>
      
   
           {!address ? (
-            <ConnectWallet />
+           <>
+           <div style={{justifyContent: "center", display: "flex", alignItems: "center", padding: "2%"}}> <ConnectWallet /></div>
+           </>
           ) : (
             <>
               <div className="tokenGrid">
@@ -106,9 +112,10 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                   </p>
                 </div>
               </div>
-              <div style={{display: "flex", justifyContent: "center", alignItems: "center", width: "100%", height: "auto", marginTop: "5%"}}>
+              <div style={{display: "flex", justifyContent: "center", alignItems: "center", width: "100%", height: "auto", marginTop: "5%", marginBottom: "1%"}}>
               <div className="box">
             <Web3Button
+          isDisabled
               style={{
                 backgroundColor: "transparent",
                 display: "flex",
@@ -117,7 +124,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                 color: "white"
 
               }}
-            action={(contract) => contract.call("claimRewards")}
+            action={(contract) => contract.call("claimRewards", _quantity())}
             contractAddress={stakingContractAddress}
           >
             Claim Rewards
@@ -125,7 +132,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
           </div>
               </div>
               
-          <div style={{justifyContent: "center", width: "auto", display: "flex", alignItems: "center", padding: "3%"}}>
+          <div style={{justifyContent: "center", width: "auto", display: "flex", alignItems: "center", padding: "1%"}}>
           <Tabs >
     <TabList>
       <Tab>Staked</Tab>
@@ -156,7 +163,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                       style={{
                         borderRadius: "16px",
                         width: "auto",
-                        height: "200px",
+                        height: "150px",
                       }}
                       metadata={nft.metadata}
                       className="nftMedia"
@@ -168,7 +175,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
             <Web3Button
               style={{
                 backgroundColor: "transparent",
-                width: "50px",
+                width: "100%",
                 display: "flex",
                 alignItems: "center",
                 height: "30px",
