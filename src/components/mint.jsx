@@ -9,11 +9,11 @@ const Mint = (props) => {
     <div className={`mint-container ${props.rootClassName} `}>
       <div className="mint-container01">
         <div className="mint-container02"></div>
-        <div className="mint-container03">Season II
+        <div className="mint-container03"><p style={{textAlign: "start"}}>Season II</p>
         <p style={{fontSize: "14px", justifyContent: "start", margin: "5px"}}>Season2 Intorduces NEW characters, Specs and Metadata Upgrades.</p>
         </div>
         <div className="mint-container04">
-          <div className="mint-container05"><h1 style={{textAlign: "start"}}>Season II</h1>
+          <div className="mint-container05"><p style={{textAlign: "start", fontSize: "20px"}}>Season II</p>
           <p style={{fontSize: "19px", justifyContent: "start", position: "absolute", marginTop: "6%", textAlign: "start", width: "40%"}}>Season2 Intorduces NEW characters, Specs and Metadata Upgrades. Mint Whale to get started.</p>
           </div>
           <div className="mint-container06">

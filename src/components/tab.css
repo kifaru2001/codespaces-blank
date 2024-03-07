@@ -94,6 +94,7 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
+  height: 300px;
   margin-top: 28px;
   flex-wrap: wrap;
 }

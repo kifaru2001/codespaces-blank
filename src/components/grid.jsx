@@ -31,14 +31,16 @@ const Grid = (props) => {
           <p style={{fontSize: "14px", fontStyle: "italic", fontWeight: "400"}}>  Claim prices will increased by 0.1 after 50 whales are claimed until launchpad completes</p>
           <Slider />
         </div>
+     
         <div className="grid-container3">
-          <p className="">Collection</p>
+        
           {isLoading ? (
             <>
             <div className='spinner' />
             </>
           ) : (
             <div style={{maxWidth: "700px", position: "absolute", height: "330", overflowY: "scroll"}}>
+                 <p className="">Whales owned</p>
              <div className="nftBoxGrid">
                 {ownedNfts?.map((nft) => (
                   <div key={nft.metadata.id.toString()}>
