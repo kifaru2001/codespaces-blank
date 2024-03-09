@@ -17,9 +17,14 @@ import NFTCard from "../components/NFTCard"
 import "./tab.css"
 import 'react-tabs/style/react-tabs.css';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+
   
   const Stake = () => {
     
+
+
+
     const address = useAddress();
     const { contract: nftDropContract } = useContract(
       NFT_COLLECTION_ADDRESS,
@@ -81,7 +86,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
     function _quantity(): any[] | undefined {
       throw new Error("Function not implemented.");
     }
-
+   
     return (
       <>
      
@@ -92,6 +97,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
            </>
           ) : (
             <>
+         
               <div className="tokenGrid">
                 <div className="tokenItem">
                   <p className="tokenLable">Rewards Earned</p>
@@ -132,7 +138,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
           </div>
               </div>
               
-          <div style={{justifyContent: "center", width: "auto", display: "flex", alignItems: "center", padding: "1%"}}>
+          <div style={{justifyContent: "center", width: "100%", display: "flex", alignItems: "center", padding: "5%", height: "600px", position: "relative", overflowY: "scroll"}}>
           <Tabs >
     <TabList>
       <Tab>Staked</Tab>
@@ -141,6 +147,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
     <div style={{justifyContent: "center"}}>
     <TabPanel>
     <h1 style={{ textAlign: "center", fontSize: "30px", padding: "1%" }}>Staked</h1>
+
               <div className="nftBoxGrid">
                 {stakedTokens &&
                   stakedTokens[0]?.map((stakedToken: BigNumber) => (
@@ -150,7 +157,6 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     />
                   ))}
               </div>
-              <div style={{height: "50px"}}></div>
     </TabPanel>
     </div>
     <div style={{justifyContent: "center"}}>

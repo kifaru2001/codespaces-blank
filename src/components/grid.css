@@ -22,15 +22,15 @@
   width: 341px;
   height: 400px;
   padding: 1%;
-  margin: var(--dl-space-space-unit);
+  margin-top: 2.4%;
   display: flex;
   align-items: center;
-  border-color: #000000;
-  border-width: 1px;
+  border-color: rgba(50, 50, 50, 0.3);
+  border-width: 0px;
   border-radius: var(--dl-radius-radius-radius8);
   flex-direction: column;
   justify-content: flex-start;
-  background-color: rgba(16, 16, 16, 0.15);
+  background-color: rgba(16, 16, 16, 0.3);
 }
 .grid-container3 {
   flex: 0 0 auto;
@@ -41,8 +41,8 @@
   display: flex;
   align-self: flex-start;
   align-items: center;
-  border-color: #000000;
-  border-width: 1px;
+  border-color: rgba(40, 40, 40, 0.5);
+  border-width: 0px;
   border-radius: var(--dl-radius-radius-radius8);
   flex-direction: column;
   justify-content: flex-start;
@@ -96,10 +96,14 @@
   width: 32px;
   height: 32px;
   border: 5px solid #f3f3f3;
-  border-top: 5px solid #555;
+  border-top: 5px solid #0095e0;
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  align-self: center;
+  padding: 1%;
 }
 @keyframes spin {
   0% {

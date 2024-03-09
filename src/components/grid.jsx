@@ -28,7 +28,7 @@ const Grid = (props) => {
       <div className="grid-container1">
         <div className="grid-container2">
           <p className="">Mint Drop</p>
-          <p style={{fontSize: "14px", fontStyle: "italic", fontWeight: "400"}}>  Claim prices will increased by 0.1 after 50 whales are claimed until launchpad completes</p>
+          <p style={{fontSize: "14px", fontStyle: "italic", fontWeight: "400", padding: "1%"}}>  Claim prices will increase by 0.1 after 50 whales are claimed until launchpad completes</p>
           <Slider />
         </div>
      
@@ -36,7 +36,9 @@ const Grid = (props) => {
         
           {isLoading ? (
             <>
-            <div className='spinner' />
+            <div style={{
+              marginTop: "20%"
+            }} className='spinner' />
             </>
           ) : (
             <div style={{maxWidth: "700px", position: "absolute", height: "330", overflowY: "scroll"}}>
