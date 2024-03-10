@@ -5,11 +5,13 @@ import { Helmet } from 'react-helmet'
 import './not-found.css'
 import "../components/Trans/hero.scss"
 import "../components/Trans/menu"
+import Menu from '../components/Trans/menu'
+import Nav from '../components/nav'
 
 const NotFound = (props) => {
   return (
     <div className="not-found-container">
-    
+    <Menu />
       <div class="blob-c">
 	<div class="shape-blob"></div>
 	<div class="shape-blob one"></div>
@@ -26,10 +28,8 @@ const NotFound = (props) => {
         <h1 className="not-found-text1">404</h1>
       </div>
       <div className="not-found-container2">
-        <h2 className="not-found-text2">
-         OOPS!!
-        </h2>
       </div>
+      <Nav />
     </div>
   )
 }

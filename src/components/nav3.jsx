@@ -16,7 +16,7 @@ const Nav = (props) => {
   return (
     <div className="nav-container">
       <div className="nav-container1">
-      <Link to="/" className="nav-navlink">
+      <Link to="/leaderboard" className="nav-navlink">
         <div className="nav-container2">
         <div class="arrow">
         <span></span>
@@ -38,7 +38,7 @@ const Nav = (props) => {
          </div>
        
       </div>
-      <Link to="/staking" className="nav-navlink">
+      <Link to="/join" className="nav-navlink">
       <div className="nav-container6">
       <div class="arrow2">
         <span></span>

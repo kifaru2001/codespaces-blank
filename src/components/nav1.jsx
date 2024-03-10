@@ -5,18 +5,23 @@ import PropTypes from 'prop-types'
 import './nav.css'
 import {ArrowLeft} from '@web3uikit/icons'
 import {Arrow} from '@web3uikit/icons'
-import { ConnectWallet } from '@thirdweb-dev/react'
-import { Link } from 'react-router-dom'
-import Chart from './chart'
 
+import { Link } from 'react-router-dom'
+import { ConnectWallet } from '@thirdweb-dev/react'
+import { useContract, useContractRead, useAddress,  useTokenBalance } from "@thirdweb-dev/react";
 
 
 
 const Nav = (props) => {
+  const address = useAddress();
+  const { contract, isLoading: load } = useContract("0x3A202eE3e212C2884e9eC7001488caF14119754e");
+  const { contract: contr } = useContract("0xe280766d22517626A17944Fe11380f13EFf711AD");
+  const { data: bal } = useTokenBalance(contract, address);
+  const { data: bal2 } = useTokenBalance(contr, address);
   return (
     <div className="nav-container">
       <div className="nav-container1">
-      <Link to="/roadmap" className="nav-navlink">
+      <Link to="/join" className="nav-navlink">
         <div className="nav-container2">
         <div class="arrow">
         <span></span>
@@ -27,6 +32,25 @@ const Nav = (props) => {
         </Link>
       </div>
       <div className="nav-container3">
+      <div className="nav-container4">
+          <div className='box' style={{height: "80px", backdropFilter: "blur(50px)", background: "rgba(200, 200, 200, 0.2)", minWidth: "250px", border: "solid gray 0px", borderRadius: "10px", padding: "2%", display: "flex", flexDirection: "column"}}>
+<p style={{fontSize: "14px", color: "gray", borderBottom: "solid 0px gray", width: "100%", margin: "1%", padding: "1%"}}>Your Ecosystem Balance</p>
+<div style={{fontSize: "14px", textAlign: "center", display: "flex", justifyContent: "center", alignItems: "center", width: "100%"}}>{
+  load ? (
+    <>
+     <div style={{
+            justifyContent: "center", display: "flex"
+            }} className='spinner' />
+    </>
+  ) : (
+    <div style={{flexDirection: "column", textAlign: "start"}}>
+    <p>🐋WHLS: {bal?.displayValue || 0.0}</p>
+    <p>⚡RARE: {bal2?.displayValue || 0.0}</p>
+    </div>
+  )
+}</div>
+        </div>
+        </div>
       <div className="box">
         <ConnectWallet 
        theme={({
@@ -54,14 +78,8 @@ const Nav = (props) => {
 
       />
         </div>
-        <div className="nav-container4">
-        <div className='box' style={{height: "80px", backdropFilter: "blur(50px)", background: "rgba(200, 200, 200, 0.2)", minWidth: "250px", border: "solid gray 0px", borderRadius: "10px", padding: "1%", display: "flex", flexDirection: "column"}}>
-<p style={{fontSize: "10px", borderBottom: "solid 0px gray", width: "100%", margin: "2%", padding: "2%"}}>Your Balance</p>
-<p style={{fontSize: "14px", textAlign: "start", display: "flex"}}>WHLS: 0.0</p>
-<p style={{fontSize: "14px", textAlign: "start"}}>RARE: 0.0</p>
-          </div>
-        </div>
        
+     
       </div>
       <Link to="/leaderboard" className="nav-navlink">
       <div className="nav-container6">
