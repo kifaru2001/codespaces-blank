@@ -33,7 +33,7 @@ className="spinner" />
  
 
         <span id="rangeValue">Amount: {input} 🐋</span>
-        <span style={{color: "gray", fontSize: "16px", textAlign: "center", padding: "1%"}} >Price: {(input * 0.125)} CORE</span>
+        <span style={{color: "gray", fontSize: "16px", textAlign: "center", padding: "1%"}} >Price: {(input * 1.25)} CORE</span>
         <input class="range" type="range"    value={input} 
            onChange={(e) => setInput(e.target.value)} min="1" max="100"/>
     </div>
