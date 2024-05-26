@@ -28,7 +28,7 @@ const Mint = (props) => {
             </div>
             <div className="mint-container08">
               <span className="mint-text2">TVL</span>
-              <span className="mint-text3" style={{fontSize: "14px", color: "green"}}>+{(event?.length - 17) * 0.125} CORE</span>
+              <span className="mint-text3" style={{fontSize: "14px", color: "green"}}>+{(event?.length - 17) * 1.25} CORE</span>
             </div>
            
           </div>
